@@ -4,6 +4,8 @@ vm_disk_vol_id={{ he_virtio_disk_details.disk.image_id }}
 vmid={{ he_vm_details.vm.id }}
 {% if he_domain_type=="nfs" or he_domain_type=="glusterfs" %}
 storage={{ he_storage_domain_addr }}:{{ he_storage_domain_path }}
+{% elif he_domain_type=="posixfs" %}
+storage={{ he_storage_domain_path }}
 {% else %}
 storage={{ he_storage_domain_addr }}
 {% endif %}

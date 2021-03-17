@@ -69,6 +69,10 @@ he_pki_renew_on_restore: false
 he_domain_type: null  # can be: nfs | iscsi | glusterfs | fc
 he_storage_domain_addr: null
 
+## POSIX-FS vars
+## Defaults are null, user should specify if NFS is chosen
+he_vfs_type: null
+
 ## NFS vars:
 ## Defaults are null, user should specify if NFS is chosen
 he_mount_options: ''
