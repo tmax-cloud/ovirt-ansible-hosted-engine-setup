@@ -39,6 +39,8 @@ he_host_name: null
 he_host_address: null
 he_cloud_init_host_name: null
 he_cloud_init_domain_name: null
+he_prolinux_repo_address: null
+he_ovirt_repo_address: null
 
 he_smtp_port: 25
 he_smtp_server: localhost
