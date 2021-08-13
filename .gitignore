@@ -4,4 +4,5 @@ roles/provision_docker
 *.tar.gz
 output/
 ovirt-ansible-engine-setup.spec
+ovirt-ansible-hosted-engine-setup.spec
 exported-artifacts/
