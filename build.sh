@@ -1,8 +1,7 @@
 #!/bin/bash
 
-VERSION="1.1.8"
-MILESTONE=
-RPM_RELEASE="1"
+VERSION="1.1.9"
+RPM_RELEASE="supervm.21.0.0"
 
 ROLE_NAME="ovirt.hosted_engine_setup"
 PACKAGE_NAME="ovirt-ansible-hosted-engine-setup"

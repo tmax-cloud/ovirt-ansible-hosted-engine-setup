@@ -4,15 +4,17 @@
 %global legacy_rolename hosted-engine-setup
 %global ansible_roles_dir ansible/roles
 
-Name: @PACKAGE_NAME@
-Summary: Ansible role to install required packages for oVirt Engine deployment, generate answerfile and run engine-setup with it.
-Version: @RPM_VERSION@
-Release: @RPM_RELEASE@%{?release_suffix}%{?dist}
-Source0: http://resources.ovirt.org/pub/src/@PACKAGE_NAME@/@PACKAGE_NAME@-@PACKAGE_VERSION@.tar.gz
-License: ASL 2.0
-Group:          Virtualization/Management
+Name:           @PACKAGE_NAME@
+Summary:        Ansible role to install required packages for oVirt Engine deployment, generate answerfile and run engine-setup with it.
+Version:        @RPM_VERSION@
+Release:        @RPM_RELEASE@%{?release_suffix}.prolinux8
+License:        ASL 2.0
+URL:            https://github.com/tmax-cloud/ovirt-ansible-hosted-engine-setup
+Source0:        https://github.com/tmax-cloud/ovirt-ansible-hosted-engine-setup/archive/%{source_basename}-@PACKAGE_VERSION@.tar.gz
+Packager:       Tmax A&C Co., Ltd. <https://technet.tmaxsoft.com/>
+Vendor:         Tmax A&C Co., Ltd.
+Group:          Tmax A&C Co., Ltd.
 BuildArch:      noarch
-Url:            http://www.ovirt.org
 
 Requires: ansible >= 2.9.11
 %if 0%{?fedora} >= 30 || 0%{?rhel} >= 8
