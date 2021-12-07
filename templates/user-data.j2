@@ -15,7 +15,7 @@ timezone: {{ he_time_zone }}
 {% endif %}
 bootcmd:
 {% if he_prolinux_repo_address is not none and he_prolinux_repo_address|length > 1 %}
-  - sed -i 's#http://prolinux-repo.tmaxos.com/prolinux/8/os/x86_64#{{ he_prolinux_repo_address }}#g' /etc/yum.repos.d/ProLinux.repo
+  - sed -i 's#http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64#{{ he_prolinux_repo_address }}#g' /etc/yum.repos.d/ProLinux.repo
 {% endif %}
 {% if he_ovirt_repo_address is not none and he_ovirt_repo_address|length > 1 %}
   - sed -i 's#http://prolinux-repo.tmaxos.com/ovirt/4.4/el8/x86_64#{{ he_ovirt_repo_address }}#g' /etc/yum.repos.d/ovirt.repo
